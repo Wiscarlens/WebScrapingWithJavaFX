@@ -14,54 +14,7 @@ import java.util.*;
  * Date May 21, 2023
  * */
 
-public class webScrapp {
-    public static void main(String[] args) throws FileNotFoundException {
-        String chapterText = " ";
-
-        // URL of the page to fetch
-        final String url = "https://www.gutenberg.org/files/1065/1065-h/1065-h.htm";
-
-        try{
-            // Connect to the URL and fetch the HTML content
-            final Document document = Jsoup.connect(url).get();
-
-            // Find the relevant element with the class "chapter"
-            Elements chapterElements = document.getElementsByClass("chapter");
-
-            // Iterate over the chapter elements and extract their text
-            for (Element chapter : chapterElements) {
-                // Data Fetch text holder
-                chapterText = chapter.text();
-                // TEST: Uncomment this line to print the poem
-                //System.out.println(chapterText);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        // Separate each words
-        String[] words = extractWords(chapterText);
-
-        Map<String, Integer> frequencyMap = getWordFrequency(words);
-
-        int breaker = 0;
-
-        System.out.println("\nTOP 20 WORDS\n");
-
-        // Print the word frequencies
-        for (Map.Entry<String, Integer> entry : frequencyMap.entrySet()) {
-            breaker++;
-
-            System.out.println(entry.getKey() + ": " + entry.getValue());
-
-            // Comment out the if-statement if you want to print all the word
-            if (breaker == 20){
-                break;
-            }
-        }
-    }
-
-
+public class webScrape {
     /**
      * @param input a long string of words
      * @return each words as an array of string without the symbol and all lowercase
