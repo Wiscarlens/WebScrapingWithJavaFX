@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed5cfa8a-5034-4620-8191-9acabd25c6c7" name="Changes" comment="">
+    <list default="true" id="ed5cfa8a-5034-4620-8191-9acabd25c6c7" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/javafxdemo/webScrapeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxdemo/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxdemo/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxdemo/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxdemo/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxdemo/Words.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxdemo/Words.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxdemo/webScrape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxdemo/webScrape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxdemo/webScrape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxdemo/WebScrape.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/javafxdemo/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/javafxdemo/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -40,10 +38,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "19",
     "last_directory_selection": "C:/Users/Wiscarlens Lucius/IdeaProjects/javaFXdemo/src/main/java/com",
-    "last_opened_file_path": "C:/Users/Wiscarlens Lucius/Documents/Computer Science/Libraries/jsoup-1.16.1.jar",
+    "last_opened_file_path": "C:/Users/Wiscarlens Lucius/Desktop",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,6 +55,54 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.javafxdemo" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="webScrapeTest.extractWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaFXdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.javafxdemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.javafxdemo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.javafxdemo.webScrapeTest" />
+      <option name="METHOD_NAME" value="extractWords" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="webScrapeTest.getWordFrequency" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaFXdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.javafxdemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.javafxdemo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.javafxdemo.webScrapeTest" />
+      <option name="METHOD_NAME" value="getWordFrequency" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.webScrapeTest.getWordFrequency" />
+        <item itemvalue="JUnit.webScrapeTest.extractWords" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,12 +115,25 @@
       <workItem from="1686846770522" duration="1802000" />
       <workItem from="1687233357455" duration="2132000" />
       <workItem from="1687237408967" duration="438000" />
-      <workItem from="1687264417893" duration="16185000" />
+      <workItem from="1687264417893" duration="17425000" />
+      <workItem from="1687735358110" duration="3987000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1687377712817</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687377712817</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

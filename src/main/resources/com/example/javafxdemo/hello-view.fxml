@@ -51,7 +51,7 @@
    <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0">
      <columns>
        <TableColumn fx:id="number" minWidth="50.0" prefWidth="50.0" text="#" />
-       <TableColumn fx:id="words" minWidth="-1.0" prefWidth="200.0" text="Words" />
+       <TableColumn fx:id="words" minWidth="200.0" prefWidth="200.0" text="Words" />
          <TableColumn fx:id="Frequency" minWidth="70.0" prefWidth="70.0" text="Frequency" />
      </columns>
    </TableView>

@@ -1,12 +1,5 @@
 package com.example.javafxdemo;
 
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
-
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.*;
 
 /**
@@ -14,7 +7,7 @@ import java.util.*;
  * Date May 21, 2023
  * */
 
-public class webScrape {
+public class WebScrape {
     /**
      * @param input a long string of words
      * @return each words as an array of string without the symbol and all lowercase

@@ -20,8 +20,8 @@ import java.net.URL;
 import java.util.Map;
 import java.util.ResourceBundle;
 
-import static com.example.javafxdemo.webScrape.extractWords;
-import static com.example.javafxdemo.webScrape.getWordFrequency;
+import static com.example.javafxdemo.WebScrape.extractWords;
+import static com.example.javafxdemo.WebScrape.getWordFrequency;
 
 public class HelloController implements Initializable {
 
@@ -43,16 +43,6 @@ public class HelloController implements Initializable {
 
     @FXML
     private Button check;
-
-//    ObservableList<Words> wordsList = FXCollections.observableArrayList(
-//            new Words(1,"Lucius", 20),
-//            new Words(2,"John", 5),
-//            new Words(3,"Mark", 51),
-//            new Words(4,"Lucas", 2),
-//            new Words(5,"Johnathan", 57),
-//            new Words(6,"Markus", 41)
-//    );
-
     ObservableList<Words> wordsList = FXCollections.observableArrayList();
 
     @FXML
