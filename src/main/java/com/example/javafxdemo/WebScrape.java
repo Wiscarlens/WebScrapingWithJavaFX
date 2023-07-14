@@ -4,6 +4,7 @@ import java.util.*;
 
 /**
  * @author Wiscarlens Lucius
+ * @version 1.0
  * Date May 21, 2023
  * */
 
@@ -20,9 +21,8 @@ public class WebScrape {
         String lowercaseText = cleanedText.toLowerCase();
 
         // Split the lowercase text into an array of words
-        String[] words = lowercaseText.split(" ");
 
-        return words;
+        return lowercaseText.split(" ");
     }
 
     /**

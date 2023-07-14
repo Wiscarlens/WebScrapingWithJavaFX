@@ -8,7 +8,7 @@ import java.util.Map;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class webScrapeTest {
+class WebScrapeTest {
 
 
     @Test
@@ -18,7 +18,7 @@ class webScrapeTest {
         String testingInput = "This Is Just a Test";
         String[] testingResult = {"this", "is", "just", "a", "test"};
 
-        assertArrayEquals(testingResult, webScrape.extractWords(testingInput));
+        assertArrayEquals(testingResult, WebScrape.extractWords(testingInput));
     }
 
     @Test
@@ -31,7 +31,7 @@ class webScrapeTest {
         expectedFrequencyMap.put("banana", 2);
         expectedFrequencyMap.put("apple", 2);
 
-        Map<String, Integer> actualFrequencyMap = webScrape.getWordFrequency(words);
+        Map<String, Integer> actualFrequencyMap = WebScrape.getWordFrequency(words);
 
         assertEquals(expectedFrequencyMap, actualFrequencyMap);
 

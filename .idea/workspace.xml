@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="All Places" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed5cfa8a-5034-4620-8191-9acabd25c6c7" name="Changes" comment="JUnit Testing" />
+    <list default="true" id="ed5cfa8a-5034-4620-8191-9acabd25c6c7" name="Changes" comment="JUnit Testing">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxdemo/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxdemo/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxdemo/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxdemo/WebScrape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxdemo/WebScrape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/javafxdemo/webScrapeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/javafxdemo/WebScrapeTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,12 +26,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/master" />
+  </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2RDcvK7tYMBxDmWKZjNuxwl2XLc" />
@@ -31,22 +48,30 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "19",
     "last_directory_selection": "C:/Users/Wiscarlens Lucius/IdeaProjects/javaFXdemo/src/main/java/com",
-    "last_opened_file_path": "C:/Users/Wiscarlens Lucius/Desktop",
+    "last_opened_file_path": "C:/Users/Wiscarlens Lucius/Documents/Computer Science/Libraries/jsoup-1.16.1.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite",
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -58,7 +83,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="webScrapeTest.extractWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WebScrapeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaFXdemo" />
       <extension name="coverage">
         <pattern>
@@ -67,14 +92,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.javafxdemo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.javafxdemo.webScrapeTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.javafxdemo.WebScrapeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebScrapeTest.extractWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaFXdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.javafxdemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.javafxdemo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.javafxdemo.WebScrapeTest" />
       <option name="METHOD_NAME" value="extractWords" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="webScrapeTest.getWordFrequency" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WebScrapeTest.getWordFrequency" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaFXdemo" />
       <extension name="coverage">
         <pattern>
@@ -83,7 +123,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.javafxdemo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.javafxdemo.webScrapeTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.javafxdemo.WebScrapeTest" />
       <option name="METHOD_NAME" value="getWordFrequency" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -92,8 +132,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.webScrapeTest.getWordFrequency" />
-        <item itemvalue="JUnit.webScrapeTest.extractWords" />
+        <item itemvalue="JUnit.WebScrapeTest" />
+        <item itemvalue="JUnit.WebScrapeTest.extractWords" />
+        <item itemvalue="JUnit.WebScrapeTest.getWordFrequency" />
       </list>
     </recent_temporary>
   </component>
@@ -111,6 +152,12 @@
       <workItem from="1687237408967" duration="438000" />
       <workItem from="1687264417893" duration="17425000" />
       <workItem from="1687735358110" duration="4424000" />
+      <workItem from="1688257796866" duration="45000" />
+      <workItem from="1688678448357" duration="1431000" />
+      <workItem from="1688863483897" duration="4424000" />
+      <workItem from="1689186828865" duration="174000" />
+      <workItem from="1689187018564" duration="4625000" />
+      <workItem from="1689273678266" duration="5804000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1687377712817</created>
@@ -131,6 +178,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />

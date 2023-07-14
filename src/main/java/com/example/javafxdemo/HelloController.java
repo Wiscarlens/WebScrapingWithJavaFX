@@ -93,9 +93,6 @@ public class HelloController implements Initializable {
             System.out.println(entry.getKey() + ": " + entry.getValue());
 
             wordsList.add(new Words(breaker,entry.getKey(), entry.getValue()));
-            //wordsList.add(new Words(2,"John", 5));
-
-
 
             // Comment out the if-statement if you want to print all the word
             if (breaker == wordsMax){
@@ -107,11 +104,15 @@ public class HelloController implements Initializable {
     }
 
 
+    /**
+    * @param url web address
+     * @param resourceBundle
+    **/
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        number.setCellValueFactory(new PropertyValueFactory<Words, Integer>("number"));
-        words.setCellValueFactory(new PropertyValueFactory<Words, String>("words"));
-        Frequency.setCellValueFactory(new PropertyValueFactory<Words, Integer>("frequency"));
+        number.setCellValueFactory(new PropertyValueFactory<>("number"));
+        words.setCellValueFactory(new PropertyValueFactory<>("words"));
+        Frequency.setCellValueFactory(new PropertyValueFactory<>("frequency"));
 
         table.setItems(wordsList);
 
