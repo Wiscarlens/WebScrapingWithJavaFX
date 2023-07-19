@@ -20,6 +20,7 @@ import java.net.URL;
 import java.util.Map;
 import java.util.ResourceBundle;
 
+import static com.example.javafxdemo.Database.*;
 import static com.example.javafxdemo.WebScrape.extractWords;
 import static com.example.javafxdemo.WebScrape.getWordFrequency;
 
@@ -53,7 +54,8 @@ public class HelloController implements Initializable {
         final String url = Address.getText();
         String tableName = TableName.getText();
         // Maximum words to print
-        int wordsMax = Integer.parseInt(totalWords.getText());
+        //int wordsMax = Integer.parseInt(totalWords.getText());
+        int wordsMax = getTotalWordsInDatabase();
 
         String chapterText = " ";
 
@@ -83,14 +85,24 @@ public class HelloController implements Initializable {
 
         int breaker = 0;
 
-        //System.out.println("\nTOP 20 WORDS\n");
-
         // Print the word frequencies
         for (Map.Entry<String, Integer> entry : frequencyMap.entrySet()) {
             breaker++;
 
-            // Words
-            System.out.println(entry.getKey() + ": " + entry.getValue());
+            // Check if the word exist in the database
+            if(!checkWordExists(entry.getKey())){
+                // Add words to the database
+                Database.addData(entry.getKey(), entry.getValue());
+            } else {
+                // Go to the next word
+                continue;
+            }
+
+            // Add data to list from database to print later
+            getDataFromDatabase(wordsList);
+
+            // Print word in console
+            // System.out.println(entry.getKey() + ": " + entry.getValue());
 
             wordsList.add(new Words(breaker,entry.getKey(), entry.getValue()));
 

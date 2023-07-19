@@ -9,46 +9,14 @@ public class Database {
     private static final String username = "root";
     private static final String password = "Papa@123";
 
-//    public static void main(String[] args) {
-//
-//        String query = "select * from word";
-//
-//
-//        try {
-//            Class.forName("com.mysql.cj.jdbc.Driver");
-//        } catch(ClassNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//
-//        try {
-//            Connection connection = DriverManager.getConnection(url, username, password);
-//            Statement statement = connection.createStatement();
-//            ResultSet result = statement.executeQuery(query);
-//
-//            int columnCount = result.getMetaData().getColumnCount();
-//
-//            while(result.next()) {
-//                StringBuilder UniversityData = new StringBuilder();
-//                for(int i = 1; i <= columnCount; i++) {
-//                    UniversityData.append(result.getString(i)).append(":");
-//                }
-//                System.out.println(UniversityData);
-//
-//            }
-//
-//        } catch(SQLException e) {
-//            e.printStackTrace();
-//        }
-//
-//    }
+
 
     /**
      * Select all data in the database
      * Copy them into an ArrayList
      * @return all dataList*/
-    public static List<String> getAllData() {
-        List<String> dataList = new ArrayList<>();
-        String query = "SELECT * FROM word";
+    public static void getDataFromDatabase(List<Words> wordsList) {
+        String query = "SELECT word, frequency FROM word";
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -58,24 +26,20 @@ public class Database {
 
         try (Connection connection = DriverManager.getConnection(url, username, password);
              Statement statement = connection.createStatement();
-             ResultSet result = statement.executeQuery(query)) {
+             ResultSet resultSet = statement.executeQuery(query)) {
 
-            int columnCount = result.getMetaData().getColumnCount();
-
-            while (result.next()) {
-                StringBuilder rowData = new StringBuilder();
-                for (int i = 1; i <= columnCount; i++) {
-                    rowData.append(result.getString(i)).append(":");
-                }
-                dataList.add(rowData.toString());
+            int breaker = 0;
+            while (resultSet.next()) {
+                String word = resultSet.getString("word");
+                int frequency = resultSet.getInt("frequency");
+                breaker++;
+                wordsList.add(new Words(breaker, word, frequency));
             }
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-        return dataList;
     }
+
 
     /**
      * @param word searching element
@@ -140,6 +104,58 @@ public class Database {
             e.printStackTrace();
         }
     }
+
+    public static void addData(String word) {
+        String query = "INSERT INTO word (word, frequency) VALUES (?, 1)";
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        try (Connection connection = DriverManager.getConnection(url, username, password);
+             PreparedStatement statement = connection.prepareStatement(query)) {
+
+            statement.setString(1, word);
+            int rowsAffected = statement.executeUpdate();
+
+            if (rowsAffected > 0) {
+                System.out.println("Data inserted successfully.");
+            } else {
+                System.out.println("Data insertion failed.");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    public static int getTotalWordsInDatabase() {
+        int totalWords = 0;
+        String query = "SELECT COUNT(*) FROM word";
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        try (Connection connection = DriverManager.getConnection(url, username, password);
+             Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery(query)) {
+
+            resultSet.next();
+            totalWords = resultSet.getInt(1);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return totalWords;
+    }
+
+
 
 
 }
