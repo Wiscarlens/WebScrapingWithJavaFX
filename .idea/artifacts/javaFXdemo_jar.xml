@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="javaFXdemo:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/javaFXdemo_jar</output-path>
+    <root id="archive" name="javaFXdemo.jar">
+      <element id="module-output" name="javaFXdemo" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/20.0.1/javafx-graphics-20.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/20.0.1/javafx-base-20.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/20.0.1/javafx-controls-20.0.1-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/20.0.1/javafx-base-20.0.1-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/20.0.1/javafx-graphics-20.0.1-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/lib/mysql-connector-j-8.0.33.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/19.0.2/javafx-fxml-19.0.2-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/lib/jsoup-1.16.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/19.0.2/javafx-fxml-19.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/20.0.1/javafx-controls-20.0.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

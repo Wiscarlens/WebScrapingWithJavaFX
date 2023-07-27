@@ -13,7 +13,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed5cfa8a-5034-4620-8191-9acabd25c6c7" name="Changes" comment="Copy library file to project">
+    <list default="true" id="ed5cfa8a-5034-4620-8191-9acabd25c6c7" name="Changes" comment="built jar">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/javaFXdemo_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/javaFXdemo_jar/javaFXdemo.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +53,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
@@ -165,7 +169,7 @@
       <workItem from="1690122193983" duration="265000" />
       <workItem from="1690418736586" duration="126000" />
       <workItem from="1690418947037" duration="330000" />
-      <workItem from="1690419452023" duration="1979000" />
+      <workItem from="1690419452023" duration="2784000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1687377712817</created>
@@ -205,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690420783907</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="built jar">
+      <option name="closed" value="true" />
+      <created>1690423723072</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690423723072</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +239,8 @@
     <MESSAGE value="JUnit Testing" />
     <MESSAGE value="Database. Add word and frequency to MySql database." />
     <MESSAGE value="Copy library file to project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Copy library file to project" />
+    <MESSAGE value="built jar" />
+    <option name="LAST_COMMIT_MESSAGE" value="built jar" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
